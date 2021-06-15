@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTintMode="add"
+    tools:context=".SubjectPage">
+
+    <ListView
+        android:id="@+id/listview"
+        style="@android:style/Widget.Material.Light.ListView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:animateLayoutChanges="false"
+        android:divider="@android:drawable/button_onoff_indicator_off"
+        android:dividerHeight="7dp"
+        android:fadingEdge="horizontal|vertical|none"
+        android:foregroundTint="#817C9F"
+        android:keepScreenOn="false"
+        android:padding="2dp"
+        android:persistentDrawingCache="scrolling|animation"
+        android:scrollingCache="true"
+        android:smoothScrollbar="true"
+        android:soundEffectsEnabled="true"
+        android:splitMotionEvents="true"
+
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="1.0">
+
+    </ListView>
+
+    <EditText
+        android:id="@+id/subName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Subject Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.383"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/listview" />
+
+    <EditText
+        android:id="@+id/subCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Subject Code"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/subName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/subName"
+        app:layout_constraintTop_toBottomOf="@+id/subName" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="add"
+        app:layout_constraintEnd_toEndOf="@+id/subCode"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/subCode"
+        app:layout_constraintTop_toBottomOf="@+id/subCode" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="77dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/buttonn3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="80"
+            android:onClick="signOut"
+            android:text="Sign Out" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="20"
+            android:backgroundTint="#D37474"
+            android:onClick="addStudent"
+            android:shadowColor="#772323"
+            android:singleLine="false"
+            android:soundEffectsEnabled="true"
+            android:text="ADD SUBJECT"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#000000"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            style="@style/AppTheme"
+            android:layout_width="207dp"
+
+            android:layout_height="match_parent"
+            android:layout_weight="75"
+            android:background="#000000"
+            app:srcCompat="@android:drawable/stat_notify_error" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:background="#000000"
+            android:gravity="start|center_vertical"
+            android:text="something"
+            android:textAlignment="gravity"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="normal|bold" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

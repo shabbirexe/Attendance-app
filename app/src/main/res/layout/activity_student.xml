@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="411dp"
+        android:layout_height="97dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editTextNumber3"
+            style="@android:style/Widget.Holo.Light.AutoCompleteTextView"
+            android:layout_width="273dp"
+            android:layout_height="61dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="enter roll number"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="check" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#817C9F"
+        android:divider="@android:drawable/button_onoff_indicator_off"
+        android:dividerHeight="7dp"
+        android:fadingEdge="horizontal|vertical|none"
+        android:foregroundTint="#FFFFFF"
+        android:keepScreenOn="false"
+        android:padding="2dp"
+        android:persistentDrawingCache="scrolling|animation"
+        android:scrollingCache="true"
+        android:smoothScrollbar="true"
+        android:soundEffectsEnabled="true"
+        android:splitMotionEvents="true"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.594" />
+</androidx.constraintlayout.widget.ConstraintLayout>
